@@ -90,7 +90,7 @@ export const products: Product[] = [
     name: "AirPods Pro (2nd generation)",
     price: 279,
     description: "Écouteurs true wireless avec réduction de bruit active, mode Transparence et étanchéité IPX4. Audio spatial et qualité sonore premium.",
-    image: "https://images.unsplash.com/photo-1606220945770-b5b6c2c9bf1d?w=400",
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1591634795000",
     category: "Audio",
     brand: "Apple",
     inStock: true,

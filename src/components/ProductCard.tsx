@@ -25,9 +25,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             src={product.image}
             alt={product.name}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            onError={(e) => {
-              e.currentTarget.src = 'https://via.placeholder.com/400x400?text=Image+non+disponible';
-            }}
+
           />
           {/* Overlay with quick actions */}
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">

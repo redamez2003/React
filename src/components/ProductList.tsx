@@ -53,16 +53,18 @@ const ProductList: React.FC = () => {
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
           <div className="flex flex-col lg:flex-row gap-6 items-center">
             {/* Search Bar */}
-            <div className="flex-1 relative">
-              <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
-              <input
-                type="text"
-                placeholder="Rechercher des produits..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="form-input pl-12 w-full text-lg"
-              />
-            </div>
+<div className="flex-1 relative">
+  <div className="absolute left-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
+    <FaSearch className="text-gray-400 text-lg" />
+  </div>
+  <input
+    type="text"
+    placeholder="Rechercher des produits..."
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+    className="w-full pl-12 pr-4 py-3.5 text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+  />
+</div>
 
             {/* Sort Dropdown */}
             <div className="relative">
